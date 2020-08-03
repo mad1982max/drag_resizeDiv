@@ -1,0 +1,102 @@
+/* @import "../custom"; */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {    
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: #bfbfbf;
+    position: relative;
+
+}
+
+#minimapBtn {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
+
+#resizeMapBtn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    border: none;
+    border-radius: 5px;
+    background: rgb(17, 26, 15);
+    color: rgb(156, 50, 50);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+#resizeMapBtn:hover {
+    cursor: nesw-resize;
+}
+
+img {
+    width: 100%;
+}
+
+#minimapBtn:active {
+    transform: translateY(2px)
+}
+
+
+#closeMiniMapBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    border: none;
+    border-radius: 5px;
+    background: rgb(17, 26, 15);
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    border: 2px solid white;
+
+}
+
+#pin {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+
+
+.minimap {
+    //display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 15px;
+    top: 5px;
+    width: 300px;
+    height: 150px;
+    background: rgb(91, 101, 243);
+    border-radius: 5px;
+  }
+
+
+.close {
+    display: none
+}
+
